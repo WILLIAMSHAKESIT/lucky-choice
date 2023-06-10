@@ -1,0 +1,124 @@
+.container{
+    max-width: calc(100% - 50px);
+    margin: 0 auto;
+}
+.bg-default{
+    background: linear-gradient(177deg,#2b3344,#181f2c);
+}
+
+.btn{
+    min-width: 50px;
+    height: 44px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #363e4e63;
+    gap: 5px;
+    border-radius: 4px;
+    filter: brightness(1);
+    transition: .5s ease-in-out;
+    &.rounded{
+        border-radius: 100%;
+        min-width: 50px;
+        min-height: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    &.btn-primary{
+        background:linear-gradient(177deg, #49a8d3, #0d5a94);
+        color: #fff;
+        i{
+            color: #fff;
+        }
+    }
+    &.btn-secondary{
+        background:linear-gradient(177deg, #2b3344, #1e2737);
+    }
+    &.btn-success{
+        background:linear-gradient(177deg, #28bb53, #126834);
+        color: #fff;
+        i{
+            color: #fff;
+        }
+    }
+    &:hover{
+        filter: brightness(1.5);
+    }
+}
+.owl-carousel{
+    .owl-stage-outer{
+        border-radius: 4px;
+        height: 300px;
+        object-fit: cover;
+        img{
+            width: 100%;
+        }
+    }
+    .item{
+        height: fit-content;
+        img{
+            object-fit: cover;
+            object-position:center;
+        }
+    }
+    .owl-item{
+        height: fit-content;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    display: none;
+}
+.mb-5{
+    margin-bottom: 5px !important;
+}
+
+.mb-10{
+    margin-bottom: 10px !important;
+}
+
+.text-white{
+    color: #fff;
+}
+
+.text-red{
+    color: rgb(236, 79, 79);
+}
+.text-blue{
+    color: rgb(107, 109, 255);
+}
+
+.flex{
+    display: flex;
+    &.items-center{
+        align-items: center;
+    }
+    &.space-between{
+        justify-content: space-between;
+    }
+    &.space-around{
+        justify-content: space-around;
+    }
+    &.center{
+        justify-content: center;
+    }
+    &.gap-sm{
+        gap: 5px;
+    }
+    &.gap-md{
+        gap: 10px;
+    }
+    .col-2{
+        width: calc(100% / 2 - 5px);
+    }
+    &.wrap{
+        flex-wrap: wrap;
+    }
+}
+.w-full{
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
