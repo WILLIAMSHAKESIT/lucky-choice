@@ -1,3 +1,49 @@
+const layout = {
+    modal(){
+        $('body').append(`
+            <div class="modal-wrapper">
+                <div class="modal-container md box-container">
+                    <div class="modal-header">
+                        <span>Announcements</span>
+                        <button class="close-modal btn btn-icon btn-danger">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion">
+                            <div class="accord-item">
+                                <div class="header">Title Here</div>
+                                <div class="body">
+                                    <span>Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!</span>
+                                </div>
+                            </div>
+                            <div class="accord-item">
+                                <div class="header">Title Here</div>
+                                <div class="body">
+                                    <span>Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!</span>
+                                </div>
+                            </div>
+                            <div class="accord-item">
+                                <div class="header">Title Here</div>
+                                <div class="body">
+                                    <span>Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!</span>
+                                </div>
+                            </div>
+                            <div class="accord-item">
+                                <div class="header">Title Here</div>
+                                <div class="body">
+                                    <span>Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!Game Enhancements: Brace yourself for an immersive gaming experience with our upgraded selection of popular casino games. We've worked tirelessly to bring you enhanced graphics, smoother gameplay, and exciting new themes. Prepare to be captivated by the next level of entertainment!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        `)
+    }
+}
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -55,5 +101,17 @@ $(document).ready(function(){
             $(this).siblings(elInput).attr('type','text');
             $(this).html('<i class="fa-solid fa-eye" data-pass="show"></i>')
         }
+    })
+    $(document).on('click','.accordion .accord-item',function(e){
+        $(this).toggleClass('active')
+        $(this).find('.body').toggle()
+        $(this).siblings().find('.body').hide()
+    })
+    $('.notif').click(function(){
+        layout.modal()
+    })
+    $(document).on('click','.close-modal',function(e){
+        e.stopPropagation()
+        $('.modal-wrapper').remove()
     })
 })
