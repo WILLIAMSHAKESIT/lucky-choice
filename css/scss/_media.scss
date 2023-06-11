@@ -57,8 +57,41 @@
             }
         }
     }
+    .modal-wrapper{
+        .modal-container{
+            min-width: unset !important;
+            width: 90%;
+        }
+    }
+    .accordion{
+        .accord-item{
+
+        }
+    }
 }
 @media(max-width:900px){
+    html,body{
+        font-size: 13px;
+        &.light-mode{
+            nav{
+                ul{
+                    li{
+                       &:hover{
+                        background: #eff6fd;
+                       }
+                        &:nth-child(1){
+                            background: linear-gradient(177deg, #49a8d3, #0081e2);
+                            i{
+                                color: #fff;
+                                background: unset;
+                                -webkit-text-fill-color:unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .filter-header{
         .form-control{
             width: 50% !important;

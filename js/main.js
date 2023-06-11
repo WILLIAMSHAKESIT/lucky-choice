@@ -130,11 +130,11 @@ $(document).ready(function(){
 
     if(theme == 'dark'){
         $(this).html('<i class="fa-solid fa-sun" data-theme="light"></i>')
-        $('body').addClass('light-mode')
+        $('html, body').addClass('light-mode')
         localStorage.setItem("theme", `${el}`);
     }else{
         $(this).html('<i class="fa-solid fa-moon" data-theme="dark"></i>')
-        $('body').removeClass('light-mode')
+        $('html, body').removeClass('light-mode')
         localStorage.setItem("theme", `${el}`);
     }
 })

@@ -1598,8 +1598,26 @@ table.table-three tbody tr td:last-child {
     justify-content: flex-end;
     gap: 10px;
   }
+  .modal-wrapper .modal-container {
+    min-width: unset !important;
+    width: 90%;
+  }
 }
 @media (max-width: 900px) {
+  html, body {
+    font-size: 13px;
+  }
+  html.light-mode nav ul li:hover, body.light-mode nav ul li:hover {
+    background: #eff6fd;
+  }
+  html.light-mode nav ul li:nth-child(1), body.light-mode nav ul li:nth-child(1) {
+    background: linear-gradient(177deg, #49a8d3, #0081e2);
+  }
+  html.light-mode nav ul li:nth-child(1) i, body.light-mode nav ul li:nth-child(1) i {
+    color: #fff;
+    background: unset;
+    -webkit-text-fill-color: unset;
+  }
   .filter-header .form-control {
     width: 50% !important;
   }
@@ -1821,8 +1839,30 @@ html.light-mode ::-webkit-scrollbar, body.light-mode ::-webkit-scrollbar {
 html.light-mode ::-webkit-scrollbar-thumb, body.light-mode ::-webkit-scrollbar-thumb {
   border: none;
 }
+html.light-mode .modal-wrapper .modal-container .modal-header, body.light-mode .modal-wrapper .modal-container .modal-header {
+  color: #3c4a66;
+  border-bottom: 1px solid #dcdcdc;
+}
+html.light-mode .modal-wrapper .modal-container .modal-body, body.light-mode .modal-wrapper .modal-container .modal-body {
+  background: #eff6fd;
+}
+html.light-mode .modal-wrapper .modal-container .modal-footer, body.light-mode .modal-wrapper .modal-container .modal-footer {
+  border-top: 1px solid #dcdcdc;
+}
+html.light-mode .accordion .accord-item, body.light-mode .accordion .accord-item {
+  background: #fff;
+}
+html.light-mode .accordion .accord-item .header, body.light-mode .accordion .accord-item .header {
+  color: #3c4a66;
+}
+html.light-mode .accordion .accord-item .body, body.light-mode .accordion .accord-item .body {
+  background-color: #eff6fd;
+}
 html.light-mode .text-white, body.light-mode .text-white {
   color: #1f253b !important;
+}
+html.light-mode .text-yellow, body.light-mode .text-yellow {
+  color: rgba(0, 134, 208, 0.88);
 }
 html.light-mode .card, body.light-mode .card {
   background: #fafbfe;
@@ -1879,14 +1919,6 @@ html.light-mode nav, body.light-mode nav {
 }
 html.light-mode nav ul li:hover, body.light-mode nav ul li:hover {
   background: #eff6fd;
-}
-html.light-mode nav ul li:nth-child(1), body.light-mode nav ul li:nth-child(1) {
-  background: linear-gradient(177deg, #49a8d3, #0081e2);
-}
-html.light-mode nav ul li:nth-child(1) i, body.light-mode nav ul li:nth-child(1) i {
-  color: #fff;
-  background: unset;
-  -webkit-text-fill-color: unset;
 }
 html.light-mode .right-main header, body.light-mode .right-main header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
