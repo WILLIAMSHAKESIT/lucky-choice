@@ -1,7 +1,7 @@
 html,body{
     &.light-mode{
         background: #eff6fd;
-        font-weight: 500;
+        font-weight: 300;
         ::-webkit-scrollbar {
             background: #ffffff;
         }
@@ -17,7 +17,7 @@ html,body{
                 .game-title{
                     span{
                         color: #1d2533 !important;
-                        font-weight: 500;
+                        font-weight: 300;
                     }
                     .players{
 
@@ -27,7 +27,7 @@ html,body{
         }
         a{
             color: #1f253b;
-            font-weight: 500;
+            font-weight: 300;
             font-size: 14px;
             &:hover{
                 color: #1d2533;
@@ -142,6 +142,9 @@ html,body{
                                 }
                             }
                             .bet-slips{
+                                .header{
+                                    color: #1f253b !important;
+                                }
                                 .table-header{
                                     background: linear-gradient(177deg, #ffffff, #f9fafe);
                                 }
@@ -154,6 +157,11 @@ html,body{
                                             color: #1d2533;
                                         }
                                     }
+                                }
+                            }
+                            .leader-board{
+                                .header{
+                                    color: #1f253b !important;
                                 }
                             }
                         }

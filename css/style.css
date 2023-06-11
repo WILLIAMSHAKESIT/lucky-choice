@@ -514,6 +514,9 @@ nav ul li:hover {
   justify-content: space-between;
   padding: 0 20px;
 }
+.right-main header .logo.mobile {
+  width: 39px;
+}
 .right-main header .bar-toggle {
   font-size: 25px;
 }
@@ -1545,9 +1548,260 @@ table.table-three tbody tr td:last-child {
   text-align: center;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .right-main main section.games .container .content .card {
+    width: calc(33.3333333333% - 10px);
+  }
+  .right-main main section.game-wrapper .game-bar {
+    min-width: 100%;
+    overflow-x: auto;
+  }
+  .right-main main section.game-wrapper .game-bar::-webkit-scrollbar {
+    height: 10px;
+  }
+  .right-main main section.game-wrapper .game-bar a {
+    min-width: 217px;
+  }
+  .right-main main section.game-wrapper .game-container {
+    flex-wrap: wrap;
+  }
+  .right-main main section.game-wrapper .game-container .game {
+    width: 100%;
+    order: 1;
+  }
+  .right-main main section.game-wrapper .game-container .leader-board {
+    order: 2;
+  }
+  .right-main main section.game-wrapper .game-container .bet-slips {
+    order: 3;
+  }
+  .right-main main section.game-wrapper .game-container .leader-board, .right-main main section.game-wrapper .game-container .bet-slips {
+    width: calc(50% - 10px);
+  }
+  .right-main main footer .container .top-content {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .right-main main footer .container .top-content .right, .right-main main footer .container .top-content .left {
+    width: 50%;
+  }
+  .right-main main footer .container .top-content .right {
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .filter-header .form-control {
+    width: 50% !important;
+  }
+  .container {
+    max-width: calc(100% - 19px);
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li:nth-child(1) {
+    order: 3;
+  }
+  nav ul li:nth-child(2) {
+    order: 1;
+  }
+  nav ul li:nth-child(3) {
+    order: 2;
+  }
+  nav ul li:nth-child(4) {
+    order: 4;
+  }
+  nav ul li:nth-child(5) {
+    order: 5;
+  }
+  .right-main {
+    width: 100%;
+  }
+  .right-main main {
+    height: calc(100% - 155px);
+    max-height: calc(100% - 155px);
+  }
+  .right-main main section.slide .owl-carousel .item .title {
+    max-width: 80%;
+    top: unset;
+    transform: unset;
+    bottom: 20px;
+  }
+  .right-main main section.slide .owl-carousel .item .title h1 {
+    font-size: 30px;
+    color: #fff;
+  }
+  .right-main main section.slide .owl-carousel .item .title p {
+    line-height: 1.2;
+  }
+  .right-main main section.game-wrapper .game-history .content {
+    gap: 20px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .right-main main section.game-wrapper .game-history .content::-webkit-scrollbar {
+    height: 10px;
+  }
+  .right-main main section.game-wrapper .game-history .content .item {
+    min-width: 54px;
+  }
+  .right-main main section.game-wrapper .game-history .content .item .item-inside {
+    white-space: nowrap;
+  }
+  .right-main main footer .container {
+    max-width: calc(100% - 57px);
+  }
+  .right-main main footer .container .top-content {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-main main footer .container .top-content .left, .right-main main footer .container .top-content .right {
+    width: 100%;
+    text-align: left;
+  }
+  .right-main main footer .container .top-content .right {
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+  .right-main main footer .container .top-content .right .item {
+    width: 150px;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+@media (max-width: 800px) {
+  .right-main main section.jackpot .content {
+    flex-direction: column;
+  }
+  .right-main main section.jackpot .content table {
+    width: 100%;
+  }
+  .right-main main section.news .container .content {
+    padding: 0;
+  }
+  .right-main main section.news .container .content .news-item > div {
+    text-align: left;
+  }
+  .register-wrapper {
+    width: 94%;
+    position: relative;
+    padding: 23px 0;
+    margin-bottom: 29px;
+  }
+  .register-wrapper .logo {
+    margin-bottom: 29px;
+  }
+  .register-wrapper .register-container {
+    width: 100%;
+  }
+  .register-wrapper .register-container.w-500 {
+    width: 100%;
+  }
+  .register-wrapper .register-container form .inputs {
+    flex-direction: column;
+  }
+  .register-wrapper .register-container form .inputs .input-form {
+    width: 100%;
+  }
+}
+@media (max-width: 683px) {
+  .right-main main section.game-wrapper .game-container .leader-board, .right-main main section.game-wrapper .game-container .bet-slips {
+    width: 100%;
+  }
+  .right-main main section.game-wrapper .game-container .game .content .drawers {
+    flex-wrap: wrap;
+  }
+  .right-main main section.game-wrapper .game-container .game .content .drawers > div {
+    width: 100%;
+  }
+  .right-main main section.game-wrapper .game-container .game .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .right-main main footer .container .top-content .right .item {
+    width: 100px;
+  }
+}
+@media (max-width: 650px) {
+  .right-main header {
+    padding: 0 7px;
+  }
+  .right-main header .right-most {
+    gap: 6px;
+  }
+  .right-main header .right-most .user-info {
+    gap: 10px;
+  }
+  .right-main header .right-most .user-info .user span {
+    display: none;
+  }
+  .right-main header .right-most .user-info .user .user-avatar {
+    margin-left: 0;
+  }
+  .right-main header .right-most .btns .btn {
+    width: 100px;
+  }
+  .right-main header .right-most .btns .btn i {
+    display: none;
+  }
+  .right-main main section.games .container .content .card {
+    width: calc(50% - 5px);
+  }
+  .transaction-box {
+    width: 100%;
+  }
+  .login-wrapper {
+    width: 94%;
+  }
+  .login-wrapper .login-container {
+    width: 100%;
+  }
+  table.table-two {
+    font-size: 10px;
+  }
+  table.table-two thead th {
+    text-align: center;
+  }
+  table.table-two tbody tr td {
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .right-main main section.games .container .content .card {
+    width: 100%;
+  }
+}
 html.light-mode, body.light-mode {
   background: #eff6fd;
-  font-weight: 500;
+  font-weight: 300;
 }
 html.light-mode ::-webkit-scrollbar, body.light-mode ::-webkit-scrollbar {
   background: #ffffff;
@@ -1563,11 +1817,11 @@ html.light-mode .card, body.light-mode .card {
 }
 html.light-mode .card .footer .game-title span, body.light-mode .card .footer .game-title span {
   color: #1d2533 !important;
-  font-weight: 500;
+  font-weight: 300;
 }
 html.light-mode a, body.light-mode a {
   color: #1f253b;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 14px;
 }
 html.light-mode a:hover, body.light-mode a:hover {
@@ -1646,6 +1900,9 @@ html.light-mode .right-main main section.game-wrapper .game-container .game .hea
 html.light-mode .right-main main section.game-wrapper .game-container .game .content .drawers > div canvas, body.light-mode .right-main main section.game-wrapper .game-container .game .content .drawers > div canvas {
   background-color: #e0e6ed;
 }
+html.light-mode .right-main main section.game-wrapper .game-container .bet-slips .header, body.light-mode .right-main main section.game-wrapper .game-container .bet-slips .header {
+  color: #1f253b !important;
+}
 html.light-mode .right-main main section.game-wrapper .game-container .bet-slips .table-header, body.light-mode .right-main main section.game-wrapper .game-container .bet-slips .table-header {
   background: linear-gradient(177deg, #ffffff, #f9fafe);
 }
@@ -1654,6 +1911,9 @@ html.light-mode .right-main main section.game-wrapper .game-container .bet-slips
 }
 html.light-mode .right-main main section.game-wrapper .game-container .bet-slips .amount span:last-child, body.light-mode .right-main main section.game-wrapper .game-container .bet-slips .amount span:last-child {
   color: #1d2533;
+}
+html.light-mode .right-main main section.game-wrapper .game-container .leader-board .header, body.light-mode .right-main main section.game-wrapper .game-container .leader-board .header {
+  color: #1f253b !important;
 }
 html.light-mode .right-main main section.game-wrapper .game-history .header, body.light-mode .right-main main section.game-wrapper .game-history .header {
   color: #1d2533;

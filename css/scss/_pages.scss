@@ -195,6 +195,11 @@ nav{
         align-items: center;
         justify-content: space-between;
         padding: 0 20px;
+        .logo{
+            &.mobile{
+                width:39px;
+            }
+        }
         .bar-toggle{
             font-size: 25px;
         }
