@@ -1,4 +1,4 @@
-html,body{
+body{
     &.light-mode{
         background: #eff6fd;
         font-weight: 300;
@@ -196,7 +196,7 @@ html,body{
                         .game-history{
                             .header{
                                 color: #1d2533;
-                                border-bottom: linear-gradient(177deg, #fafcfd, #f9fafe);
+                                border-bottom: 1px solid #0000001a;
                             }
                         }
                     }

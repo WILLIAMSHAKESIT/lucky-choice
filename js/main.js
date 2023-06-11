@@ -114,6 +114,7 @@ $(document).ready(function(){
         e.stopPropagation()
         $('.modal-wrapper').remove()
     })
+    
     $('.dark-mode').click(function(){
         let el = $(this).find('i').data().theme
         if(el == 'dark'){
@@ -126,15 +127,16 @@ $(document).ready(function(){
             localStorage.setItem("theme", `${el}`);
         }
     })
+
     let theme = localStorage.getItem("theme");
 
     if(theme == 'dark'){
+        $('body').addClass('light-mode')
         $(this).html('<i class="fa-solid fa-sun" data-theme="light"></i>')
-        $('html, body').addClass('light-mode')
         localStorage.setItem("theme", `${el}`);
     }else{
+        $('body').removeClass('light-mode')
         $(this).html('<i class="fa-solid fa-moon" data-theme="dark"></i>')
-        $('html, body').removeClass('light-mode')
         localStorage.setItem("theme", `${el}`);
     }
 })
