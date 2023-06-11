@@ -754,6 +754,7 @@ nav ul li:hover {
   justify-content: center;
   margin-bottom: 16px;
   font-size: 20px;
+  color: #fff;
 }
 .right-main main section.game-wrapper .game-container .game .content {
   width: 100%;
@@ -786,8 +787,10 @@ nav ul li:hover {
   justify-content: space-between;
 }
 .right-main main section.game-wrapper .game-container .game .content .controls .center-control .btns .btn {
-  width: 130px !important;
+  width: 101px !important;
   height: 32px;
+  font-size: 11px;
+  white-space: nowrap;
 }
 .right-main main section.game-wrapper .game-container .leader-board, .right-main main section.game-wrapper .game-container .bet-slips {
   width: 22%;
@@ -871,6 +874,29 @@ nav ul li:hover {
 .right-main main section.game-wrapper .game-container .bet-slips .content {
   max-height: 437px;
   min-height: 437px;
+}
+.right-main main section.game-wrapper .game-history {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 21px;
+}
+.right-main main section.game-wrapper .game-history .header {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(54, 62, 78, 0.3882352941);
+  padding-bottom: 12px;
+}
+.right-main main section.game-wrapper .game-history .content {
+  display: flex;
+  justify-content: space-between;
+}
+.right-main main section.game-wrapper .game-history .content .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
 }
 .right-main main footer {
   height: -moz-fit-content;
@@ -1202,6 +1228,30 @@ table.table-three tbody tr td:last-child {
   margin: 0 auto;
 }
 
+.transaction-box {
+  min-height: 300px;
+  max-width: 500px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 30px;
+  padding-top: 0;
+}
+.transaction-box .title {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(54, 62, 78, 0.3882352941);
+  padding: 12px 0;
+}
+.transaction-box .confirm h1 {
+  font-size: 40px;
+}
+
 .container {
   max-width: calc(100% - 50px);
   margin: 0 auto;
@@ -1240,6 +1290,7 @@ table.table-three tbody tr td:last-child {
 }
 .btn.btn-secondary {
   background: linear-gradient(177deg, #2b3344, #1e2737);
+  color: #fff;
 }
 .btn.btn-success {
   background: linear-gradient(177deg, #28bb53, #126834);
@@ -1250,6 +1301,10 @@ table.table-three tbody tr td:last-child {
 }
 .btn:hover {
   filter: brightness(1.5);
+}
+.btn.btn-full {
+  width: 100%;
+  max-width: unset;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -1312,6 +1367,9 @@ table.table-three tbody tr td:last-child {
 .flex.space-around {
   justify-content: space-around;
 }
+.flex.justify-center {
+  justify-content: center;
+}
 .flex.center {
   justify-content: center;
 }
@@ -1327,6 +1385,9 @@ table.table-three tbody tr td:last-child {
 .flex.wrap {
   flex-wrap: wrap;
 }
+.flex.flex-col {
+  flex-direction: column;
+}
 
 .w-full {
   width: 100%;
@@ -1334,4 +1395,21 @@ table.table-three tbody tr td:last-child {
 
 .text-center {
   text-align: center;
+}
+
+.main-fit-h {
+  height: calc(100vh - 300px);
+  position: relative;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

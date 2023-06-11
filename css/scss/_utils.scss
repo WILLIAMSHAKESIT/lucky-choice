@@ -34,6 +34,7 @@
     }
     &.btn-secondary{
         background:linear-gradient(177deg, #2b3344, #1e2737);
+        color: #fff;
     }
     &.btn-success{
         background:linear-gradient(177deg, #28bb53, #126834);
@@ -44,6 +45,10 @@
     }
     &:hover{
         filter: brightness(1.5);
+    }
+    &.btn-full{
+        width: 100%;
+        max-width: unset;
     }
 }
 .owl-carousel{
@@ -100,6 +105,9 @@
     &.space-around{
         justify-content: space-around;
     }
+    &.justify-center{
+        justify-content: center;
+    }
     &.center{
         justify-content: center;
     }
@@ -115,10 +123,28 @@
     &.wrap{
         flex-wrap: wrap;
     }
+    &.flex-col{
+        flex-direction: column;
+    }
 }
 .w-full{
     width: 100%;
 }
 .text-center{
     text-align: center;
+}
+
+.main-fit-h{
+    height: calc(100vh - 300px);
+    position: relative;
+}
+
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
 }

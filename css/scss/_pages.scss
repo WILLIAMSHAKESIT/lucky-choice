@@ -460,6 +460,7 @@ nav{
                             justify-content: center;
                             margin-bottom: 16px;
                             font-size: 20px;
+                            color: #fff;
                         }
                         .content{
                             width: 100%;
@@ -497,8 +498,10 @@ nav{
                                     }
                                     .btns{
                                         .btn{
-                                            width: 130px !important;
+                                            width: 101px !important;
                                             height: 32px;
+                                            font-size: 11px;
+                                            white-space: nowrap;
                                         }
                                     }
                                 }
@@ -594,6 +597,29 @@ nav{
                         .content{
                             max-height: 437px;
                             min-height: 437px;
+                        }
+                    }
+                }
+                .game-history{
+                    border-radius: 5px;
+                    padding: 20px;
+                    margin-bottom: 21px;
+                    .header{
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                        border-bottom: 1px solid rgba(54, 62, 78, 0.3882352941);
+                        padding-bottom: 12px;
+                    }
+                    .content{
+                        display: flex;
+                        justify-content: space-between;
+                        .item{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 10px;
+                            font-weight: 400;
                         }
                     }
                 }
