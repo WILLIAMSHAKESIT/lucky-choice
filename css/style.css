@@ -735,7 +735,7 @@ nav ul li:hover {
   align-items: center;
 }
 .right-main main section.game-wrapper .main-title .game-title {
-  background: -webkit-linear-gradient(#1277a4, #1b36a1);
+  background: -webkit-linear-gradient(#42c5ff, #1b36a1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -757,10 +757,18 @@ nav ul li:hover {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 16px;
   font-size: 20px;
   color: #fff;
+  position: relative;
+}
+.right-main main section.game-wrapper .game-container .game .header .timer {
+  font-weight: 700;
+  background: -webkit-linear-gradient(#42c5ff, #1b36a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
 }
 .right-main main section.game-wrapper .game-container .game .content {
   width: 100%;
@@ -1339,6 +1347,25 @@ table.table-three tbody tr td:last-child {
   max-height: 200px;
   overflow: auto;
   display: none;
+}
+
+.timer-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #e0e6ed;
+  width: 100%;
+  bottom: -10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.timer-bar::before {
+  content: "";
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(177deg, #0d5a94, #49a8d3);
 }
 
 .container {

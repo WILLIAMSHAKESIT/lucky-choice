@@ -445,7 +445,7 @@ nav{
                     justify-content: space-between;
                     align-items: center;
                     .game-title{
-                        background: -webkit-linear-gradient(#1277a4,#1b36a1);
+                        background: -webkit-linear-gradient(#42c5ff, #1b36a1);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-size: 30px;
@@ -465,10 +465,18 @@ nav{
                             display: flex;
                             width: 100%;
                             align-items: center;
-                            justify-content: center;
+                            justify-content: space-between;
                             margin-bottom: 16px;
                             font-size: 20px;
                             color: #fff;
+                            position: relative;
+                            .timer{
+                                font-weight: 700;
+                                background: -webkit-linear-gradient(#42c5ff, #1b36a1);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                font-size: 25px;
+                            }
                         }
                         .content{
                             width: 100%;

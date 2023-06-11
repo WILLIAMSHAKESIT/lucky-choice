@@ -404,3 +404,22 @@ table{
         }
     }
   }
+
+  .timer-bar{
+    position: absolute;
+    height: 2px;
+    background-color: #e0e6ed;
+    width: 100%;
+    bottom: -10px;
+    border-radius: 10px;
+    overflow: hidden;
+    &::before{
+        content: "";
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(177deg, #0d5a94, #49a8d3);
+    }
+  }
