@@ -1688,6 +1688,9 @@ table.table-three tbody tr td:last-child {
   .right-main main section.slide .owl-carousel .item .title p {
     line-height: 1.2;
   }
+  .right-main main section.game-wrapper .main-title .game-title {
+    font-size: 22px;
+  }
   .right-main main section.game-wrapper .game-history .content {
     gap: 20px;
     padding-bottom: 10px;

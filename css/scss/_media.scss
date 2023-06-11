@@ -172,6 +172,11 @@
                     }
                 }
                 &.game-wrapper{
+                    .main-title{
+                        .game-title{
+                            font-size: 22px;
+                        }
+                    }
                     .game-history{
                         .content{
                             gap: 20px;
