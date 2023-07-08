@@ -389,16 +389,14 @@ table {
 }
 
 .register-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto !important;
 }
 .register-wrapper .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 56px;
+  margin-bottom: 19px;
+  margin-top: 59px;
 }
 .register-wrapper .logo img {
   width: 270px;
@@ -413,6 +411,7 @@ table {
   min-height: 100px;
   border-radius: 5px;
   padding: 20px;
+  margin-bottom: 31px;
 }
 .register-wrapper .register-container.w-500 {
   width: 500px;
@@ -508,7 +507,7 @@ nav ul li:hover {
   width: 200px;
 }
 .right-main header {
-  height: 84px;
+  height: 69px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -577,8 +576,8 @@ nav ul li:hover {
   border-left: 1px solid rgba(54, 62, 78, 0.3882352941);
 }
 .right-main main {
-  height: calc(100% - 84px);
-  max-height: calc(100% - 84px);
+  height: calc(100% - 69px);
+  max-height: calc(100% - 69px);
   width: 100%;
   overflow: auto;
 }
@@ -776,10 +775,7 @@ nav ul li:hover {
   border-radius: 5px;
   padding: 15px;
 }
-.right-main main section.game-wrapper .game-container .game .content .drawers > div {
-  height: 400px;
-}
-.right-main main section.game-wrapper .game-container .game .content .drawers > div canvas {
+.right-main main section.game-wrapper .game-container .game .content .drawers > div canvas, .right-main main section.game-wrapper .game-container .game .content .drawers > div iframe {
   background-color: #101b22;
   border-radius: 5px;
   width: 100%;
@@ -790,7 +786,7 @@ nav ul li:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .right-main main section.game-wrapper .game-container .game .content .controls .center-control {
   display: flex;
@@ -799,6 +795,22 @@ nav ul li:hover {
   gap: 9px;
   height: 100%;
   justify-content: space-between;
+}
+.right-main main section.game-wrapper .game-container .game .content .controls .center-control .picks {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.right-main main section.game-wrapper .game-container .game .content .controls .center-control .picks .lucky-picks {
+  background: #0d171d;
+  padding: 6px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .right-main main section.game-wrapper .game-container .game .content .controls .center-control .btns .btn {
   width: 101px !important;
@@ -911,6 +923,52 @@ nav ul li:hover {
   align-items: center;
   gap: 10px;
   font-weight: 400;
+}
+.right-main main section.game-wrapper .profile-container {
+  border-radius: 5px;
+  min-height: calc(100% - 45px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 23px;
+  width: calc(100% - 600px);
+  margin: auto;
+  margin-bottom: 35px;
+}
+.right-main main section.game-wrapper .profile-container .profile-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-main main section.game-wrapper .profile-container .profile-avatar img {
+  width: 130px;
+  border-radius: 100px;
+}
+.right-main main section.game-wrapper .profile-container .profile-avatar span {
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize !important;
+}
+.right-main main section.game-wrapper .profile-container .user-details {
+  width: 95%;
+}
+.right-main main section.game-wrapper .profile-container .user-details .user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding: 0 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.right-main main section.game-wrapper .profile-container .user-details .user-item:hover {
+  background: #181f2c;
+}
+.right-main main section.game-wrapper .profile-container .user-details .user-item .item-info, .right-main main section.game-wrapper .profile-container .user-details .user-item .edit {
+  display: flex;
+  gap: 5px;
 }
 .right-main main footer {
   height: -moz-fit-content;
@@ -1521,6 +1579,13 @@ table.table-three tbody tr td:last-child {
 }
 .flex .col-2 {
   width: calc(50% - 5px);
+  aspect-ratio: 1/1 !important;
+}
+.flex .col-3 {
+  width: calc(33.3333333333% - 7px);
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  aspect-ratio: 1/1 !important;
 }
 .flex.wrap {
   flex-wrap: wrap;
@@ -1546,7 +1611,7 @@ table.table-three tbody tr td:last-child {
 }
 
 .main-fit-h {
-  height: calc(100vh - 300px);
+  min-height: calc(100vh - 300px);
   position: relative;
 }
 
@@ -1586,6 +1651,9 @@ table.table-three tbody tr td:last-child {
 @media (max-width: 1280px) {
   .right-main main section.games .container .content .card {
     width: calc(33.3333333333% - 10px);
+  }
+  .right-main main section.game-wrapper .profile-container {
+    width: 100%;
   }
   .right-main main section.game-wrapper .game-bar {
     min-width: 100%;
@@ -1668,17 +1736,27 @@ table.table-three tbody tr td:last-child {
     display: flex;
     justify-content: space-around;
   }
+  nav ul li {
+    width: 20% !important;
+  }
   nav ul li:nth-child(1) {
     order: 3;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li:nth-child(1):hover {
+    background: unset;
+  }
+  nav ul li:nth-child(1) a {
     border-radius: 100px;
     background: #3c4a66;
     height: 58px;
     width: 58px;
-    margin-top: 7px;
-    font-size: 20px;
-    color: #fff;
   }
-  nav ul li:nth-child(1) i {
+  nav ul li:nth-child(1) a i {
     background: linear-gradient(177deg, #49a8d3, #0081e2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1699,8 +1777,8 @@ table.table-three tbody tr td:last-child {
     width: 100%;
   }
   .right-main main {
-    height: calc(100% - 155px);
-    max-height: calc(100% - 155px);
+    height: calc(100% - 138px);
+    max-height: calc(100% - 138px);
   }
   .right-main main section.slide .owl-carousel .item .title {
     max-width: 80%;
@@ -1802,9 +1880,18 @@ table.table-three tbody tr td:last-child {
   .right-main main section.game-wrapper .game-container .game .content .drawers > div {
     width: 100%;
   }
-  .right-main main section.game-wrapper .game-container .game .controls {
+  .right-main main section.game-wrapper .game-container .game .content .controls {
     flex-direction: column;
     gap: 10px;
+  }
+  .right-main main section.game-wrapper .game-container .game .content .controls .center-control .btns {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-main main section.game-wrapper .game-container .game .content .controls .center-control .btns .btn {
+    width: 100% !important;
   }
   .right-main main footer .container .top-content .right .item {
     width: 100px;

@@ -140,6 +140,12 @@
     }
     .col-2{
         width: calc(100% / 2 - 5px);
+        aspect-ratio: 1/1 !important;
+    }
+    .col-3{
+        width: calc(100% / 3 - 7px);
+        height: fit-content !important;
+        aspect-ratio: 1/1 !important;
     }
     &.wrap{
         flex-wrap: wrap;
@@ -162,7 +168,7 @@
 }
 
 .main-fit-h{
-    height: calc(100vh - 300px);
+    min-height: calc(100vh - 300px);
     position: relative;
 }
 .min-h-fit{

@@ -68,15 +68,13 @@ html,body{
     }
 }
 .register-wrapper{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto !important;
     .logo{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 56px;
+        margin-bottom: 19px;
+        margin-top: 59px;
         img{
             width: 270px;
         }
@@ -91,6 +89,7 @@ html,body{
         min-height: 100px;
         border-radius: 5px;
         padding: 20px;
+        margin-bottom: 31px;
         &.w-500{
             width: 500px;
         }
@@ -190,7 +189,7 @@ nav{
         width: 200px;
     }
     header{
-        height: 84px;
+        height: 69px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -263,8 +262,8 @@ nav{
         }
     }
     main{
-        height: calc(100% - 84px);
-        max-height: calc(100% - 84px);
+        height: calc(100% - 69px);
+        max-height: calc(100% - 69px);
         width: 100%;
         overflow: auto;
         section{
@@ -486,8 +485,8 @@ nav{
                             .drawers{
                                 >{
                                     div{
-                                        height: 400px;
-                                        canvas{
+                                        // height: 400px;
+                                        canvas,iframe{
                                             background-color: #101b22;
                                             border-radius: 5px;
                                             width: 100%;
@@ -501,7 +500,7 @@ nav{
                                 width: 100%;
                                 justify-content: space-around;
                                 align-items: center;
-                                margin-top: 10px;
+                                margin-top: 20px;
                                 .center-control{
                                     display: flex;
                                     flex-direction: column;
@@ -509,8 +508,21 @@ nav{
                                     gap: 9px;
                                     height: 100%;
                                     justify-content: space-between;
-                                    .lucky-picks{
-
+                                    .picks{
+                                        width: 100%;
+                                        overflow-x: auto;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        justify-content: center;
+                                        gap: 10px;
+                                        .lucky-picks{
+                                            background: #0d171d;
+                                            padding: 6px;
+                                            border-radius: 5px;
+                                            flex-wrap: wrap;
+                                            justify-content: center;
+                                        }
                                     }
                                     .btns{
                                         .btn{
@@ -636,6 +648,52 @@ nav{
                             align-items: center;
                             gap: 10px;
                             font-weight: 400;
+                        }
+                    }
+                }
+                .profile-container{
+                    border-radius: 5px;
+                    min-height: calc(100% - 45px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 23px;
+                    width: calc(100% - 600px);
+                    margin: auto;
+                    margin-bottom: 35px;
+                    .profile-avatar{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img{
+                            width: 130px;
+                            border-radius: 100px;
+                        }
+                        span{
+                            font-size: 23px;
+                            font-weight: 600;
+                            text-transform:capitalize !important;
+                        }
+                    }
+                    .user-details{
+                        width: 95%;
+                        .user-item{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            min-height: 50px;
+                            padding: 0 14px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            &:hover{
+                                background: #181f2c;
+                            }
+                            .item-info,.edit{
+                                display: flex;
+                                gap: 5px;
+                            }
                         }
                     }
                 }
